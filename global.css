@@ -11,16 +11,16 @@ th, td        { vertical-align: top; text-align: right; }
 
 /* #finaltable table { border-collapse:collapse; } */
 /* #finaltable table, td { border:1px solid white; } */
-#finaltable:hover td { background-color: blue; } 
+#finaltable:hover td { background-color: #89EFA6; } 
 tr:nth-child(odd)    { background-color:#eee; }
 tr:nth-child(even)    { background-color:#00FF66; }
 input        { text-align: right;  border: none;       }     /* Align input to the right  */
-textarea     { border: outset; border-color: white;       }                        
-table        { border: inset; border-color: white; }
+textarea     { border: outset; border-color: white;      }                        
+table        { border: inset; border-color: white;background-color:#000000; }
 table.center { margin-left:auto; margin-right:auto; }
-#result      { border-color: red; }
-tr.error       { background-color: red; }
+#result      { border-color: #F53C3C; }
+tr.error       { background-color: #F53C3C; }
 body
 {
- background-color:#b0c4de;  /* blue */
+ background-color:#E9EBAF;  /* blue */
 }
