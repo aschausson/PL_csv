@@ -48,7 +48,10 @@ function calculate() {
       r.push(tr+_.template(row, {items : result})+"</tr>");
     }
     else {
-      alert('ERROR! row '+temp+' does not look as legal CSV');
+	  if (document.getElementById("boton").innerHTML == "tabla:")
+		alert('¡ERROR! la fila '+temp+' no parece un CSV legal');
+	  else
+		alert('ERROR! row '+temp+' does not look as legal CSV');
       error = true;
     }
   }
