@@ -9,17 +9,57 @@
      <script type="text/javascript" src="csv.js"></script>
   </head>
   <body>
-    <h1>Comma Separated Value Analyzer</h1>
+    <h1 id="titulo">Comma Separated Value Analyzer</h1>
+	
+	<a id="idioma"> Cambiar idioma: </a>
+	<a href="javascript:cambiaEsp()" id="cambiaEsp_bt">Espa&ntilde;ol</a>
+	<strong> / </strong>
+	<a href="javascript:cambiaEng()" id="cambiaEng_bt">English</a>
+	<br>
+	<br>
     <div>
-      <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
+      <i id="instrucciones">Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
     </div>
     <table>
       <tr>
-        <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
+        <th id="cadena">CSV string:</th> <!-- autofocus attribute is HTML5 -->
         <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td> 
       </tr>
     </table>
-    <button type="button">table:</button><br>
+    <button type="button" id="boton">table:</button><br>
     <span class="output" id="finaltable"></span>
+	
+	<script type="text/javascript">
+	
+		function cambiaEsp(){
+			var titulo = "Analizador de Valores Separados por Comas"
+			document.getElementById("titulo").innerHTML = titulo;
+			var idioma = "Cambiar idioma: "
+			document.getElementById("idioma").innerHTML = idioma;
+			var instrucciones = "Escriba una cadena CSV. Haga click en el botón tabla. El programa devuelve una tabla con los datos especificados."
+			document.getElementById("instrucciones").innerHTML = instrucciones;
+			var cadena = "Cadena CSV:"
+			document.getElementById("cadena").innerHTML = cadena;
+			var boton = "tabla:"
+			document.getElementById("boton").innerHTML = boton;
+			
+		}
+		
+		function cambiaEng(){
+			var titulo = "Comma Separated Value Analyzer"
+			document.getElementById("titulo").innerHTML = titulo;
+			idioma = "Change language: "
+			document.getElementById("idioma").innerHTML = idioma;
+			var instrucciones = "Write a CSV string. Click the table button. The program outputs a table with the specified data."
+			document.getElementById("instrucciones").innerHTML = instrucciones;
+			var cadena = "CSV string:"
+			document.getElementById("cadena").innerHTML = cadena;
+			var boton = "table:"
+			document.getElementById("boton").innerHTML = boton;
+		}
+	
+	
+	</script>
+	
   </body>
 </html>
